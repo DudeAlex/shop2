@@ -12,9 +12,8 @@ public class AutoConfig {
       return new ChromeDriver();
     }
 
-    public static WebDriver configureDriver(WebDriver driver){
+    public static void configureDriver(WebDriver driver){
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        return driver;
     }
 }
