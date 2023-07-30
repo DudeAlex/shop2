@@ -1,5 +1,6 @@
 package base;
 
+import Utils.AutoConfig;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -10,6 +11,8 @@ public abstract class BaseModel {
     private WebDriverWait wait2;
 
     public WebDriver getDriver() {
+        if (driver == null)
+            driver = AutoConfig.startDriver();
         return driver;
     }
 
