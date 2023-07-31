@@ -9,10 +9,19 @@ public class BaseTest extends BaseModel {
 
     @BeforeTest
     public void setUp(){
-       AutoConfig.configureDriver(getDriver());
+       configure();
+       openUrl();
     }
     @AfterMethod
     public void tearDown(){
         quitDriver();
+    }
+
+
+    private void configure(){
+        AutoConfig.configureDriver(getDriver());
+    }
+    private void openUrl() {
+        getDriver().get(AutoConfig.getUrl());
     }
 }
