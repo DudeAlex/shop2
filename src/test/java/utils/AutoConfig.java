@@ -1,5 +1,6 @@
-package Utils;
+package utils;
 
+import constants.Config;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -18,7 +19,7 @@ public class AutoConfig {
     private static void loadProperties() {
         InputStream inputStream = null;
         try {
-            inputStream = new FileInputStream("src/test/resources/properties");
+            inputStream = new FileInputStream(Config.PROPERTIES_ROOT);
             properties.load(inputStream);
         } catch (IOException e) {
             throw new RuntimeException(e);

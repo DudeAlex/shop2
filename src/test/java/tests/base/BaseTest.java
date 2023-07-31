@@ -1,6 +1,6 @@
 package tests.base;
 
-import Utils.AutoConfig;
+import utils.AutoConfig;
 import base.BaseModel;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
