@@ -26,6 +26,7 @@ public class AutoConfig {
         }
     }
     public static WebDriver startDriver(){
+
       return new ChromeDriver();
     }
 

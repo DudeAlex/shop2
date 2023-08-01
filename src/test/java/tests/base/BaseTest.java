@@ -1,5 +1,6 @@
 package tests.base;
 
+import org.testng.annotations.BeforeMethod;
 import utils.AutoConfig;
 import base.BaseModel;
 import org.testng.annotations.AfterMethod;
@@ -7,20 +8,17 @@ import org.testng.annotations.BeforeTest;
 
 public class BaseTest extends BaseModel {
 
-    @BeforeTest
-    public void setUp(){
-       configure();
-       openUrl();
+    @BeforeMethod
+    public void setUp() {
+        startDriver();
+        openUrl();
     }
+
     @AfterMethod
-    public void tearDown(){
+    public void tearDown() {
         quitDriver();
     }
 
-
-    private void configure(){
-        AutoConfig.configureDriver(getDriver());
-    }
     private void openUrl() {
         getDriver().get(AutoConfig.getUrl());
     }

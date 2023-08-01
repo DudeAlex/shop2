@@ -11,6 +11,10 @@ public abstract class BaseModel {
     private WebDriverWait wait2;
 
     public WebDriver getDriver() {
+        return driver;
+    }
+
+    public WebDriver startDriver(){
         if (driver == null)
             driver = AutoConfig.startDriver();
         return driver;
