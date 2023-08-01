@@ -17,7 +17,7 @@ public class AutoConfig {
     private static final Properties properties = new Properties();
 
     private static void loadProperties() {
-        InputStream inputStream = null;
+        InputStream inputStream;
         try {
             inputStream = new FileInputStream(Config.PROPERTIES_ROOT);
             properties.load(inputStream);

@@ -1,10 +1,9 @@
 package tests.base;
 
-import org.testng.annotations.BeforeMethod;
-import utils.AutoConfig;
 import base.BaseModel;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
+import utils.AutoConfig;
 
 public class BaseTest extends BaseModel {
 
