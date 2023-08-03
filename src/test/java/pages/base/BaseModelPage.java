@@ -1,12 +1,12 @@
-package pages;
+package pages.base;
 
 import base.BaseModel;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class BasePage extends BaseModel {
+public abstract class BaseModelPage extends BaseModel {
 
-    public BasePage(WebDriver driver){
+    public BaseModelPage(WebDriver driver){
 
         PageFactory.initElements(driver, this);
     }
