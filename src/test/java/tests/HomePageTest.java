@@ -18,6 +18,5 @@ public class HomePageTest extends BaseTest {
         String homePageTitle = new HomePage(getDriver()).getHomePageTitle();
 
         Assert.assertEquals(homePageTitle, "Raining Offers for Hot Summer!");
-        Assert.fail();
     }
 }
