@@ -1,9 +1,9 @@
-package pages;
+package pom.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import pages.base.BaseModelPage;
+import pom.base.BaseModelPage;
 
 public class HomePage extends BaseModelPage {
 

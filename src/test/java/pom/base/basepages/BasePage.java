@@ -1,7 +1,7 @@
-package pages.base.pages;
+package pom.base.basepages;
 
 import org.openqa.selenium.WebDriver;
-import pages.base.BaseModelPage;
+import pom.base.BaseModelPage;
 
 public class BasePage extends BaseModelPage {
     public BasePage(WebDriver driver) {

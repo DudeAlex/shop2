@@ -1,4 +1,4 @@
-package pages.base;
+package pom.base;
 
 import base.BaseModel;
 import org.openqa.selenium.WebDriver;
