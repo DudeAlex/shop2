@@ -14,10 +14,9 @@ public abstract class BaseModel {
         return driver;
     }
 
-    public WebDriver startDriver(){
+    public void startDriver(){
         if (driver == null)
             driver = AutoConfig.startDriver();
-        return driver;
     }
 
     public void quitDriver(){
