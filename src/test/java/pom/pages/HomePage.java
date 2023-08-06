@@ -3,9 +3,9 @@ package pom.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import pom.base.BaseModelPage;
+import pom.base.basepages.BasePage;
 
-public class HomePage extends BaseModelPage {
+public class HomePage extends BasePage {
 
     @FindBy(xpath = "//h1[contains(text(), 'Raining Offers')]")
     private WebElement homePageTopic;
