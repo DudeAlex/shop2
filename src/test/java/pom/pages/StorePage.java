@@ -14,7 +14,8 @@ public class StorePage extends BasePage {
         super(driver);
     }
 
-    public String getStorePageTitle(){
+    public String getStorePageTitle() throws InterruptedException {
+
         return title.getText();
     }
 

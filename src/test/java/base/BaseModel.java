@@ -15,6 +15,7 @@ public abstract class BaseModel {
     }
 
     public void startDriver(){
+
         if (driver == null)
             driver = AutoConfig.startDriver();
     }

@@ -23,6 +23,7 @@ public class HomePage extends BasePage {
 
     public StorePage navigateToStorePageViaShopNow() {
         shopNowButton.click();
+
         return new StorePage(getDriver());
     }
 }
