@@ -8,7 +8,7 @@ import tests.base.BaseTest;
 
 public class StorePageTest extends BaseTest {
     @Test
-    public void testNavigateToStorePage() throws InterruptedException {
+    public void testNavigateToStorePage() {
         StorePage storePage = new HomePage(getDriver()).navigateToStorePageViaShopNow();
 
         String storePageTitle = storePage.getStorePageTitle();

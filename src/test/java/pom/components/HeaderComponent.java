@@ -16,8 +16,8 @@ public class HeaderComponent extends BaseComponent {
     private WebElement homeMenuElement;
 
     public HomePage clickHomeMenuItem(){
-        //getWait2().until(ExpectedConditions.elementToBeClickable(homeMenuElement)).click();
-        homeMenuElement.click();
+        getWait2().until(ExpectedConditions.elementToBeClickable(homeMenuElement)).click();
+        //homeMenuElement.click();
 
         return new HomePage(getDriver());
     }

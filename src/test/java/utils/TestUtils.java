@@ -20,7 +20,7 @@ public class TestUtils {
          getScreenshotFileName(method);
 
 
-        File target = new File(Config.SHREENSHOTS_ROOT + getScreenshotFileName(method));
+        File target = new File(Config.SCREENSHOTS_ROOT + getScreenshotFileName(method));
         File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
 
         try {

@@ -3,7 +3,6 @@ package tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pom.pages.HomePage;
-import pom.pages.StorePage;
 import tests.base.BaseTest;
 
 public class HomePageTest extends BaseTest {

@@ -29,7 +29,7 @@ public abstract class BaseModel {
 
     public WebDriverWait getWait2(){
         if(wait2 == null)
-            wait2 = new WebDriverWait(driver, Duration.ofSeconds(2));
+            wait2 = new WebDriverWait(getDriver(), Duration.ofSeconds(2));
         return wait2;
     }
 }

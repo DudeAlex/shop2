@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public abstract class BaseModelPage extends BaseModel {
 
-    private WebDriver driver;
+    private final WebDriver driver;
     public BaseModelPage(WebDriver driver){
 
         this.driver = driver;
